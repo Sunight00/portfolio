@@ -16,7 +16,7 @@ code {
 
 #root{
   height:100vh;
-  padding: 0.2rem 0.3rem 3rem 0.2rem;    
+  padding: 0.2rem 0 3rem 0.2rem;    
 }
 
 .main {

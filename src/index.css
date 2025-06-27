@@ -9,5 +9,21 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace; 
+}
+
+
+
+#root{
+  height:100vh;
+  padding: 0.2rem 0.3rem 3rem 0.2rem;    
+}
+
+.main {
+  height: 98%;
+  scrollbar-width: thin;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background-color: #c52424;
+  padding: 1rem;
 }

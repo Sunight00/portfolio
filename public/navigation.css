@@ -1,0 +1,86 @@
+/*SMALL CSS*/
+@media (max-width:426px){
+    .nav-links.active{
+    background-color: #384257;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25px;
+    right: 2px;
+}
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: #282c34;
+    border-bottom: solid 1px #414d68;
+    animation: colorChange 2s ease-in-out infinite;
+}
+
+@keyframes colorChange {
+  0% { border-color: #53658f; }
+  50% { border-color: #475d8f; }
+  100% { border-color: #5676c2; }
+}
+.toggle{
+    display: block;
+}
+
+.nav-links{
+    display: none;  
+}
+
+.link{
+     padding: 1rem 3rem 1rem 3rem   ;
+}
+
+.link:hover{
+    background-color: #4a5568;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.link{
+    list-style: none;
+}
+
+/*LARGE CSS*/
+@media (min-width: 426px) and (max-width:1440px){
+    .toggle{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+    } 
+}
+
+
+
+/*SIDE SCROLLING*/
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color:#282c34; ;
+    }
+
+    .scroll-container {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      background: #f0f0f0;
+    } 
+
+    .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      border-bottom: 2px solid #ccc;
+    }
